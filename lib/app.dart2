@@ -1,0 +1,24 @@
+import 'package:flutter/material.dart';
+import 'screens/home_screen.dart';
+
+class JibwisAIApp extends StatelessWidget {
+  const JibwisAIApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Jibwis AI',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        primaryColor: const Color(0xFF0D47A1),
+        scaffoldBackgroundColor: const Color(0xFF121212),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF0D47A1),
+          brightness: Brightness.dark,
+        ),
+      ),
+      home: const HomeScreen(),
+    );
+  }
+}
